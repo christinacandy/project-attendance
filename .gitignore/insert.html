@@ -1,0 +1,94 @@
+<html>
+<head>
+  <title>Insert</title>
+  </head>
+  <body>
+  
+<style>
+
+body{
+ 
+background-image:url("attendence.jpg");
+
+ height:100%;
+ 
+background-repeat: no-repeat;
+ 
+background-position: center;
+ 
+background-size: cover;
+
+ }
+
+</style>
+
+
+
+<center>
+
+<h1>  <font color="purple"> ANITS </font>
+</h1>
+<h2><font color="purple">ATTENDANCE MANAGEMENT SYSTEM</font></h2>
+
+<marquee behavior="scroll" direction="left">/*minimum 75% attendance requried for eligibility*/</marquee>
+<br><br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<form action="message.php" method="post">
+    
+    <button type="submit" value="submit">Notifications</button>
+</form>
+
+<form method = "post" action ="insert.php">
+ 
+<br><br>
+<label><b>Hari</b></label>
+<input type="radio" name="Hari" value="present" >present  
+<input type="radio" name="Hari" value="absent"> absent 
+<input type="radio" name="Hari" value="sick" >sick  
+<input type="radio" name="Hari" value="late"> late 
+<br>
+<br>
+<label><b>prava</b></label>
+<input type="radio" name="prava" value="present" >present  
+<input type="radio" name="prava" value="absent"> absent 
+<input type="radio" name="prava" value="sick" >sick  
+<input type="radio" name="prava" value="late"> late 
+<br>
+<br>
+<label><b>prasu</b></label>
+<input type="radio" name="prasu" value="present" >present  
+<input type="radio" name="prasu" value="absent"> absent 
+<input type="radio" name="prasu" value="sick" >sick  
+<input type="radio" name="prasu" value="late"> late 
+<br>
+<br>
+<label><b>candy</b></label>
+<input type="radio" name="candy" value="present" >present  
+<input type="radio" name="candy" value="absent"> absent 
+<input type="radio" name="candy" value="sick" >sick  
+<input type="radio" name="candy" value="late"> late 
+<br>
+<br>
+<label><b>mouni</b></label>
+<input type="radio" name="mouni" value="present" >present  
+<input type="radio" name="mouni" value="absent"> absent 
+<input type="radio" name="mouni" value="sick" >sick  
+<input type="radio" name="mouni" value="late"> late 
+<br>
+<br>
+<label><b>ravali</b></label>
+<input type="radio" name="ravali" value="present" >present  
+<input type="radio" name="ravali" value="absent"> absent 
+<input type="radio" name="ravali" value="sick" >sick  
+<input type="radio" name="ravali" value="late"> late 
+<br>
+<br>
+       <input type="submit" name="sign" value="Submit"> 
+</center>
+  </form>
+
+  </body>
+  </html>

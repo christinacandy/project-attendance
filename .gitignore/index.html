@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: blue;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: pink;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+<center>
+
+<h1>  <font color="purple"> ANITS </font></h1>
+
+<h2><font color="purple">ATTENDANCE MANAGEMENT SYSTEM</font></h2>
+
+<marquee behavior="scroll" direction="left">/*minimum 75% attendance requried for eligibility*/</marquee><br>
+<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="navbar">
+  <a href="index.html">home</a>
+  <a href="contact_us.html">contact-us</a>
+<a href="parent_give_message.html">messages</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="adminlogin.html">ADMIN</a>
+      <a href="facultylogin.html">FACULTY</a>
+      
+    </div>
+
+  </div> 
+</div>
+<h2 class="w3-center"></h2>
+
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="image1.jpeg" style="width:100%">
+  <img class="mySlides" src="image2.jpeg" style="width:100%">
+  <img class="mySlides" src="image3.jpeg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+</body>
+</html>
